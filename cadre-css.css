@@ -1,0 +1,256 @@
+:root {
+  --bg-color: #FAF7EF;
+  --fg-color: #323639;
+  --quote-bg-color: #B2A480;
+  --red: #e61935;
+  --font-size: 18px;
+}
+
+body {
+  margin: 0;
+  font-family: "Oxygen", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;;
+  font-size: var(--font-size);
+  line-height: 50px;
+  text-decoration: none;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+h1, .h1 {
+  font-size: 3.5em;
+  line-height: 1.5em;
+}
+
+h2, .h2 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h3, .h3 {
+  font-size: 2.5em;
+  /* line-height: 1.5em; */
+}
+
+h4, .h4 {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+h5, .h5 {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+h6, .h6 {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+strong {
+  font-weight: 900;
+}
+
+em {
+  font-weight: 600;
+}
+
+mark {
+  background-color: #f7e180;
+  font-weight: 600;
+}
+
+s {
+  font-style: oblique;
+}
+
+a {
+  text-decoration: hidden;
+}
+
+a:link {
+  color: #056fb0;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.25s all ease;
+}
+
+a:visited {
+  color: #8e659c;
+}
+
+a:hover {
+  color: #d73444;
+  text-decoration: underline;
+}
+
+a:active {
+  /* background-color: ; */
+  transform: rotate(45deg);
+  /* 0% { transform: skewX(9deg); }
+  10% { transform: skewX(-8deg); }
+  20% { transform: skewX(7deg); }
+  30% { transform: skewX(-6deg); }
+  40% { transform: skewX(5deg); }
+  50% { transform: skewX(-4deg); }
+  60% { transform: skewX(3deg); }
+  70% { transform: skewX(-2deg); }
+  80% { transform: skewX(1deg); }
+  90% { transform: skewX(0deg); }
+  100% { transform: skewX(0deg); } */
+}
+
+blockquote {
+  background: var(--quote-bg-color);
+  border-left: 10px solid #878682;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  /* quotes: "\201C""\201D""\2018""\2019"; */
+}
+
+hr {
+  border-top: 3px double;
+  color: var(--fg-color);
+}
+
+
+/* *** Begin Control Flow *** */
+
+input[type=text],
+input[type=email],
+input[type=password],
+label>textarea {
+
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1em;
+  box-shadow: 2px 1px;
+  display: block;
+
+}
+
+
+/* *** Begin Navbar and Footer *** */
+.custom-navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: gray;
+  color: white;
+  padding: 0;
+  height: 4em;
+}
+
+.custom-navbar > ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+}
+
+.custom-navbar > ul > li > a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.25em;
+  color: white;
+}
+
+.custom-navbar > ul > li > a:hover {
+  background-color: #B2A480;
+}
+
+
+.custom-footer {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-footer > ul {
+
+}
+
+.custom-flexbox-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 50px;
+  padding-left: 200px;
+}
+
+.custom-flexbox-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.custom-flexbox-images > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  list-style-type: none;
+}
+
+.light-blue {
+  background: #DBEEFC;
+
+}
+
+.dark-blue {
+  background: #132F40;
+  color: #FAF7F0;
+}
+
+p {
+  width: 300px;
+}
+
+button {
+  background: #132F40;
+  color: #FAF7F0;
+  height: 5em;
+  width: 10em;
+  border-radius: 15px;
+  font-size: 1em;
+  transition: 1s;
+}
+
+button:hover {
+  color: #67AC5B;
+  transition: 1s;
+}
+
+.custom-flexbox-images > ul > li > img {
+  transition: 2000ms;
+}
+
+.custom-flexbox-images > ul > li:hover > img {
+  transition: 2000ms;
+  /* position: relative;
+  top: -55px; */
+  transform: translateY(-40px);
+}
+
+.custom-flexbox-images > ul {
+  text-align: center;
+}
+
+.circle {
+  transition: 2000ms;
+  height: 0px;
+  width: 0px;
+  background: #70D68C;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.custom-flexbox-images > ul > li:hover > .circle {
+  transition: 2000ms;
+  height: 60px;
+  width: 60px;
+}
+
+/* .custom-flexbox-images > ul > li:hover {
+  transition: 1s;
+  background: #67AC5B;
+} */
